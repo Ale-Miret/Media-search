@@ -1,15 +1,20 @@
 *{
  transition: all .5s;
 display: grid;
-
+ 
  grid-template-areas: 
  "head head"
  "main aside"
  "foot foot";
- background-image: url();
- 
+
+   
  }
 
+
+:root{
+    background-image: url(../images/background.jpg);
+    background-size: 200px;
+}
  
 .container.main-header {
     display: grid;
@@ -17,15 +22,17 @@ display: grid;
     align-items: center;
     width: 400px;
     height: 150px;
-    background-color:darkgrey;
+   background-color: #6B4984;
     margin-top: 50px;
     grid-area: head;
- grid-auto-flow: column;
+
+
     
    
 }
 
 .movie-box{
+    background-color: darkgray;
     display: grid;
     grid-template-areas: 
     "a a a a b b b"
@@ -38,6 +45,8 @@ display: grid;
      width: 400px;
      margin-top: 50px;
      height: 200px;
+     background-color: #141852;
+     color: whitesmoke;
 
 }
 
@@ -64,9 +73,6 @@ display: grid;
 
 
 }
-
-
-
 button.is-responsive {
     color: whitesmoke;
     background: darkblue;
