@@ -1,0 +1,8 @@
+*{
+    transition: all .5s;
+ 
+ }
+
+ body {
+    background-color: blue;
+ }
