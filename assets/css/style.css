@@ -12,10 +12,9 @@ display: grid;
 
 
 :root{
-    background-image: url(../images/background.jpg);
-    background-size: 200px;
+    background-image: url(../images/nightsky.jpeg);
+background-size: cover;
 }
- 
 .container.main-header {
     display: grid;
     justify-content: center;
