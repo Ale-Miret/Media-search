@@ -1,7 +1,8 @@
 *{
  transition: all .5s;
 display: grid;
- 
+ justify-content: center;
+ align-items: center;
  grid-template-areas: 
  "head head"
  "main aside"
@@ -15,13 +16,18 @@ display: grid;
     background-image: url(../images/nightsky.jpeg);
 background-size: cover;
 }
+
+
+.title.top-title{
+    color: whitesmoke;
+}
 .container.main-header {
     display: grid;
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 150px;
-   background-color: #6B4984;
+   background-color: #483475;
     margin-top: 50px;
     grid-area: head;
 
