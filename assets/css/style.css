@@ -1,8 +1,79 @@
 *{
-    transition: all .5s;
+ transition: all .5s;
+display: grid;
+
+ grid-template-areas: 
+ "head head"
+ "main aside"
+ "foot foot";
+ background-image: url();
  
  }
 
- body {
-    background-image: url(./img/background.jpg);
+ 
+.container.main-header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    background-color:darkgrey;
+    margin-top: 50px;
+    grid-area: head;
+ grid-auto-flow: column;
+    
+   
+}
+
+.movie-box{
+    display: grid;
+    grid-template-areas: 
+    "a a a a b b b"
+    "c c c c b b b"
+    "d d d d b b b"
+    "e e e e b b b "
+    "f f f f b b b" ;
+    grid-area: main;
+     border: 2px solid black;
+     width: 400px;
+     margin-top: 50px;
+     height: 200px;
+
+}
+
+
+.movieposter{
+    grid-area: "b";
+    
+}
+.movie-box-title{
+    grid-area: a;
+}
+ .movie-box-releasedate{
+    grid-area: c;
+ } 
+ .movie-box-runtime{
+    grid-area: d;
+ } 
+ .movie-box-maincast{
+    grid-area: e;
  }
+
+.movie-box-synopsis {
+   grid-area: f;
+
+
+}
+
+
+
+button.is-responsive {
+    color: whitesmoke;
+    background: darkblue;
+}
+.trailer{
+    display: grid;
+    grid-area: aside;
+    border: 2px solid black;
+}
+
