@@ -88,3 +88,19 @@ button.is-responsive {
     border: 2px solid black;
 }
 
+footer ul li a img {
+    width: 25px;
+    height: 25px;
+  }
+  .gotopbtn {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
