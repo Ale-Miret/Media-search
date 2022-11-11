@@ -38,7 +38,7 @@ background-size: cover;
 
 .movie-box{
     background-color: darkgray;
-    display: block;
+    display: none;
     /* grid-template-areas: 
     "a a a a b b b"
     "c c c c b b b"
