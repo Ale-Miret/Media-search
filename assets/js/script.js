@@ -37,7 +37,7 @@ var movieResults = function (data){
     console.log(data);
     // document.querySelector(".movie-box-div").style.display = "block";
     for(var i = 0; i < data.Search.length; i++){
-    var repoInfo = "Title: " + data.Search[i].Title + ' (' + data.Search[i].Type + ')' + "<br>Release Date: " + data.Search[i].Year + '<br><a href="https://www.imdb.com/title/' + data.Search[i].imdbID + '/">Link to IMDB ' + '<br> <img src="' + data.Search[i].Poster + '" alt="Poster image of ' + data.Search[i].Title + '">';
+    var repoInfo = "Title: " + data.Search[i].Title + ' (' + data.Search[i].Type + ')' + "<br>Release Date: " + data.Search[i].Year + '<br><a href="https://www.imdb.com/title/' + data.Search[i].imdbID + '/" target="_blank"><img src="' + data.Search[i].Poster + '" alt="Poster image of ' + data.Search[i].Title + '"> ';
     var repoEl = document.createElement('div');
     repoEl.classList = 'movie-results';
     var infoEl = document.createElement('div');

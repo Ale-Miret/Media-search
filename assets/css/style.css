@@ -38,24 +38,27 @@ background-size: cover;
 
 .movie-box{
     background-color: darkgray;
-    display: grid;
-    grid-template-areas: 
+    display: block;
+    /* grid-template-areas: 
     "a a a a b b b"
     "c c c c b b b"
     "d d d d b b b"
     "e e e e b b b "
-    "f f f f b b b" ;
+    "f f f f b b b" ; */
     grid-area: main;
      border: 2px solid black;
-     width: 400px;
+     width: 100%;
      margin-top: 50px;
-     height: 200px;
+     height: 100%;
      background-color: #141852;
      color: whitesmoke;
 
 }
 
-
+.movie-results{
+    padding: 10px;
+    border: white 1px solid;
+}
 .movieposter{
     grid-area: "b";
     
