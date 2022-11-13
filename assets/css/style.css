@@ -7,8 +7,8 @@ display: grid;
  "head head"
  "main aside"
  "foot foot";
-}
-
+   
+ }
 
 :root{
     background-image: url(../images/nightsky.jpeg);
