@@ -27,14 +27,16 @@ background-size: cover;
 .movie-box{
     background-color: darkgray;
     display: flex;
+    justify-content: center;
+     align-items: center;
      border: 2px solid black;
      width:fit-content;
      margin-top: 30px;
      height: 100%;
      background-color: #141852;
      color: whitesmoke;
-     justify-content: center;
-     align-items: center;
+     margin-left: 25%;
+     
      
 ;
 }
@@ -43,6 +45,9 @@ background-size: cover;
     padding: 10px;
     border: white 1px solid;
     padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 button.is-responsive {
