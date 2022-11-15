@@ -12,30 +12,30 @@
    
 </head>
 <body>
-    <header class="container main-header">
+    <header class="column is-three-fifths is-offset-one-fifth">
         <h1 class="title top-title">Movie Search</h1>
-        <br>
-        <input id="movie-input" type="text" placeholder="Search any Movie or Television Series" size="40px">
+  <div class="searcbutton">
+        <input id="movie-input" type="text" placeholder="Search any Movie or Television Series">
         <button class="button is-responsive">
             Search
-          </button>
-          
+          </button></div>
     </header>
 
     <section class="movie-box">
-        <!-- <h2 class="movie-box-title">Title:</h2>
-        <h2 class="movie-box-releasedate" >Release Date:</h2>
-        <h2 class="movie-box-runtime" >Run Time:</h2>
-        <h2 class="movie-box-maincast" >Main Cast:</h2>
-        <h2 class="movie-box-synopsis" >Synopsis:</h2> -->
-        <!-- </table>
-        <img src="#" alt="Movie Poster" class="movieposter"> -->
-        
+      <div class="card" id="quotebox">
+        <div class="card-content" id="cardcontent">
+          <p class="title" id="quotetitle">Quote
+          </p>
+          <p class="subtitle" id="author">
+            Author
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="trailer">
+    <!--<section class="trailer">
       <img src="#" alt="Youtube Trailer" />
-    </section>
+    </section>-->
 
 <a class="gotopbtn" href="#">
             <img src="../Movie-search/assets/images/arrow-up-long-solid.svg" alt="Scroll to Top">
@@ -89,3 +89,4 @@
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
+
