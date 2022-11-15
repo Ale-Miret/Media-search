@@ -6,6 +6,7 @@
 :root{
     background-image: url(../images/nightsky.jpeg);
 background-size: cover;
+background-attachment: fixed;
 }
 
 
@@ -38,8 +39,7 @@ background-size: cover;
      margin-left: 25%;
      margin-right: 25%;
      
-     
-;
+    
 }
 
 .movie-results{
@@ -48,12 +48,13 @@ background-size: cover;
     padding-left: 40px;
     display: flex;
     flex-direction: row;
-    
+justify-content: flex-end;
 }
+
 
 button.is-responsive {
     color: whitesmoke;
-    background: darkblue;
+    background: #141852;
 }
 
 
@@ -78,4 +79,12 @@ footer ul li a img {
 
   .main-footer{
 display: inline-flex;
+  }
+
+  #quotebox{
+    background: #141852;
+
+  }
+  #quotebox:hover{
+    background-color: silver;
   }
