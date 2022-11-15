@@ -1,3 +1,24 @@
+
+var category = 'movies'
+var quoteEl = document.getElementById("quotetitle");
+var authorEl = document.getElementById("author");
+var quoteBox = document.getElementById("cardcontent");
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+    headers: { 'X-Api-Key': 'U1yN1E4bPzeehm6tc5Qh/Q==Z2vnbdd4lv8gLJZh'},
+    contentType: 'application/json',
+    success: function(result) {
+   
+        quoteEl.innerHTML = "<q>" + result[0].quote;
+        author.innerHTML = "<em> ~By: " + result[0].author;
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
 var APIKey = "62501089";
 var baseURL = "http://www.omdbapi.com/?apikey=";
 var movieInput = document.querySelector('#movie-input').value;
