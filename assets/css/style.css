@@ -79,3 +79,7 @@ footer ul li a img {
   .main-footer{
 display: inline-flex;
   }
+
+  .modal-card-body{
+    background-color: white;
+  }
