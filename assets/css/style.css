@@ -1,8 +1,10 @@
+/*transition for the entire page*/
+
 *{
  transition: all .5s;
  }
 
-
+/*background has a fixed image to cover entire document*/
 :root{
     background-image: url(../images/nightsky.jpeg);
 background-size: cover;
@@ -10,10 +12,16 @@ background-attachment: fixed;
 }
 
 
+/*Used Bulma for CSS framework, add text*/
+/*this is the header with the input box inside*/
 .title.top-title{
     color: whitesmoke;
     
 }
+
+
+/*Used Bulma for CSS framework, add text*/
+
 .column.is-three-fifths.is-offset-one-fifth{
     display: flex;
  justify-content: center;
@@ -24,6 +32,8 @@ background-attachment: fixed;
     
     
 }
+
+/*the section that contains the box that holds all the content*/
 
 .movie-box{
     background-color: darkgray;
@@ -51,19 +61,22 @@ background-attachment: fixed;
 justify-content: flex-end;
 }
 
+/*Used Bulma for CSS framework, to create the search button*/
 
 button.is-responsive {
     color: whitesmoke;
     background: #141852;
 }
 
-
+/*area for the header & positioning*/
 footer ul li a img {
     width: 25px;
     height: 25px;
 
   }
   
+
+  /*button that leads back to the top of the page*/
   .gotopbtn {
     position: fixed;
     width: 30px;
@@ -77,9 +90,12 @@ footer ul li a img {
     font-size: 22px;
   }
 
+
+
   .main-footer{
 display: inline-flex;
   }
+/*Used Bulma for CSS framework, to add cards to the layout*/
 
   #quotebox{
     background: #141852;
@@ -88,3 +104,4 @@ display: inline-flex;
   #quotebox:hover{
     background-color: silver;
   }
+/* this content will disapear and reappear after the functio nto search a movie*/
