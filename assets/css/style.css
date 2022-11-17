@@ -1,97 +1,107 @@
-*{
- transition: all .5s;
-display: grid;
- justify-content: center;
- align-items: center;
- grid-template-areas: 
- "head head"
- "main aside"
- "foot foot";
-   
- }
+/*transition for the entire page*/
 
-:root{
-    background-image: url(../images/nightsky.jpeg);
-background-size: cover;
-background-attachment: fixed;
+* {
+  transition: all 0.5s;
 }
 
-
-.title.top-title{
-    color: whitesmoke;
-    
-}
-.column.is-three-fifths.is-offset-one-fifth{
-    display: flex;
- justify-content: center;
- align-items: center;
-   background-color: #483475;
-    margin-top: 40px;
-    flex-direction: column;
-    
-    
+/*background has a fixed image to cover entire document*/
+:root {
+  background-image: url(../images/nightsky.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.movie-box{
-    background-color: darkgray;
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     border: 2px solid black;
-     width:fit-content;
-     margin-top: 30px;
-     height: 100%;
-     background-color: #141852;
-     color: whitesmoke;
-     margin-left: 25%;
-     margin-right: 25%;
-     
-    
+/*Used Bulma for CSS framework, add text*/
+/*this is the header with the input box inside*/
+.title.top-title {
+  color: whitesmoke;
 }
 
-.movie-results{
-    padding: 10px;
-    border: white 1px solid;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: row;
-justify-content: flex-end;
+/*Used Bulma for CSS framework, add text*/
+
+.column.is-three-fifths.is-offset-one-fifth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #483475;
+  margin-top: 40px;
+  flex-direction: column;
 }
 
+/*the section that contains the box that holds all the content*/
 
+.movie-box {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: fit-content;
+  margin-top: 30px;
+  height: 100%;
+  background-color: #141852;
+  color: whitesmoke;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.movie-results {
+  padding: 10px;
+  border: white 1px solid;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/*Used Bulma for CSS framework, to create the search button*/
 button.is-responsive {
-    color: whitesmoke;
-    background: #141852;
+  color: whitesmoke;
+  background: #141852;
 }
 
-
+/*area for the header & positioning*/
 footer ul li a img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
+}
 
-  }
-  
-  .gotopbtn {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 22px;
-  }
+/*button that leads back to the top of the page*/
+.gotopbtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
 
   .main-footer{
-display: inline-flex;
-  }
+    margin-left: 25%;
+  display: inline-flex;
+}
 
-  #quotebox{
-    background: #141852;
+/*Used Bulma for CSS framework, to add cards to the layout*/
 
-  }
-  #quotebox:hover{
-    background-color: silver;
-  }
+#quotebox {
+  background: #141852;
+}
+#quotebox:hover {
+  background-color: silver;
+}
+/* this content will disapear and reappear after the function to search a movie*/
+
+/*button to click onto more information, styled and centered to be at the bottom of the div*/
+
+ .button.infoBtn {
+  align-self: flex-end;
+  border-radius: 10px;
+  background-color: #483475;
+  color: whitesmoke;
+
+}
