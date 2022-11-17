@@ -93,6 +93,7 @@ footer ul li a img {
 
 
   .main-footer{
+    margin-left: 25%;
 display: inline-flex;
   }
 /*Used Bulma for CSS framework, to add cards to the layout*/
@@ -104,4 +105,14 @@ display: inline-flex;
   #quotebox:hover{
     background-color: silver;
   }
-/* this content will disapear and reappear after the functio nto search a movie*/
+/* this content will disapear and reappear after the function to search a movie*/
+
+/*button to click onto more information, styled and centered to be at the bottom of the div*/
+
+ .button.infoBtn {
+  align-self: flex-end;
+  border-radius: 10px;
+  background-color: #483475;
+  color: whitesmoke;
+
+}
