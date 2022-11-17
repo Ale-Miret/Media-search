@@ -106,89 +106,6 @@ var movieResults = function (data) {
     repoEl.innerHTML = repoInfo;
     movieBoxEl.appendChild(repoEl);
   }
-<<<<<<< HEAD
-}
-
-  var getMoreInfo = function (movieID) {
-    if (movieInput != 0) {
-      var apiUrl = baseURL + APIKey + "&plot=full&i=" + movieID;
-      console.log(apiUrl);
-      fetch(apiUrl)
-        .then(function (response) {
-          if (response.ok) {
-            console.log(response);
-            response.json().then(function (dataMore) {
-              console.log(dataMore);
-              movieResultsMore(dataMore);
-            });
-          } else {
-            alert("Error: " + response.statusText);
-          }
-        })
-        .catch(function (error) {
-          alert("Unable to connect");
-        });
-    }
-  };
-
-  var movieResultsMore = function (dataMore) {
-    console.log(dataMore);
-    console.log(dataMore.Plot);
-    var modalEl = document.querySelector("#modal-card-body");
-    var modalBox = document.querySelector("#infoModal");
-    modalEl.innerHTML =
-      "<h1>" +
-      dataMore.Title +
-      "</h1>" +
-      "<br>Actors: " +
-      dataMore.Actors +
-      "<br>Awards: " +
-      dataMore.Awards +
-      "<br>BoxOffice: " +
-      dataMore.BoxOffice +
-      "<br>Director: " +
-      dataMore.Director +
-      "<br>Genre: " +
-      dataMore.Genre +
-      "<br>Rated: " +
-      dataMore.Rated +
-      "<br>Ratings: " +
-      "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
-      dataMore.Ratings[0].Source +
-      ": " +
-      dataMore.Ratings[0].Value +
-      "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
-      dataMore.Ratings[1].Source +
-      ": " +
-      dataMore.Ratings[1].Value +
-      "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
-      dataMore.Ratings[2].Source +
-      ": " +
-      dataMore.Ratings[2].Value +
-      "<br>Released: " +
-      dataMore.Released +
-      "<br><p>Plot: " +
-      dataMore.Plot +
-      "</P";
-    modalBox.classList.add("is-active");
-  };
-
-  function closeModal($el) {
-    $el.classList.remove("is-active");
-  }
-
-  (
-    document.querySelectorAll(
-      ".modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button"
-    ) || []
-  ).forEach(($close) => {
-    const $target = $close.closest(".modal");
-
-    $close.addEventListener("click", () => {
-      closeModal($target);
-    });
-  });
-=======
 };
 
 var getMoreInfo = function (movieID) {
@@ -267,4 +184,3 @@ function closeModal($el) {
     closeModal($target);
   });
 });
->>>>>>> 3e19bd242dc9fece4a0552e1e107fe95e46eddad
