@@ -86,6 +86,10 @@ li button:hover {
   width: 80vw;
 }
 
-
+.backhome{
+color: whitesmoke;
+display: flex;
+justify-content: flex-end;
+}
 
  
