@@ -12,12 +12,18 @@ A web application that allows the user to search (and save their search) through
 * Rating
 * Synopsis
 
-## Acceptance Criteria
-It is done when:
+## Technologies Used
+* HTML
+* CSS (Bulma)
+* JavaScript
+* OMDB API
+* Ninjas API (Quotes).
 
-* The user types a movie or series title in the search bar, and the application returns the movie's profile. 
-* The user is able to save their recent searches.
+## Challenges and Successes
+* Challenges : Some challenges were pushing commits and merging code and locating a second API after the OMDB API.
+* Successes : We managed to get all tools used to communicate and cooperate with each other. 
 
+## Complete Application Screenshot
 
 ![movie framework photo](https://user-images.githubusercontent.com/111591265/200462457-4bf0859b-50bd-4e87-8239-62a0aca7535f.JPG)
 
