@@ -1,3 +1,32 @@
+
+//created variables
+//variable for the quote and the author
+//element for the section that will contain the quote with bulma card
+//seleteced category we needed for the API to access as a parameter
+
+var category = 'movies'
+var quoteEl = document.getElementById("quotetitle");
+var authorEl = document.getElementById("author");
+var quoteBox = document.getElementById("cardcontent");
+$.ajax({
+    method: 'GET',
+    //Getting the API from API Ninjas for random movie quotes and authors
+    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+    headers: { 'X-Api-Key': 'U1yN1E4bPzeehm6tc5Qh/Q==Z2vnbdd4lv8gLJZh'},
+    contentType: 'application/json',
+    success: function(result) {
+   //On page load, the results from the array with the quote and author will be displayed on the inner HTML// 
+        quoteEl.innerHTML = "<q>" + result[0].quote;
+        author.innerHTML = "<em> ~By: " + result[0].author;
+        console.log(result);
+        //the results of the array will be console.log
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+//
+
 var APIKey = "62501089";
 var baseURL = "http://www.omdbapi.com/?apikey=";
 var movieInput = document.querySelector('#movie-input').value;
@@ -61,8 +90,6 @@ var movieResults = function (data){
     repoEl.innerHTML = repoInfo;
     movieBoxEl.appendChild(repoEl);
 };
-};
-
 
 var getMoreInfo = function (movieID) {
   if(movieInput != 0){
@@ -109,3 +136,4 @@ function closeModal($el) {
     closeModal($target);
   });
 });
+};
