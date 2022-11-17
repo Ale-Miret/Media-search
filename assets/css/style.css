@@ -80,7 +80,8 @@ footer ul li a img {
   font-size: 22px;
 }
 
-.main-footer {
+
+  .main-footer{
     margin-left: 25%;
   display: inline-flex;
 }
