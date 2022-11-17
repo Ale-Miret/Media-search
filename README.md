@@ -1,9 +1,9 @@
 ADDED README FILE.
 
-# Movie Search
+# Media Search
 
 ## Description
-Web application that allows user to search (and save their search) a movie or series by title, genre and view information such as:
+A web application that allows the user to search (and save their search) through multiple different media titles (movies, tv series and video games) and display information such as:
 * Movie title
 * Release date
 * Movie runtime
