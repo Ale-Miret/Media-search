@@ -1,5 +1,3 @@
-ADDED README FILE.
-
 # Media Search
 
 ## Description
