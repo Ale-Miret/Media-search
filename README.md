@@ -12,10 +12,10 @@ A web application that allows the user to search (and save their search) through
 
 ## Technologies Used
 * HTML
-* CSS (Bulma)
+* CSS FrameWork (Bulma)
 * JavaScript
 * OMDB API
-* Ninjas API (Quotes).
+* Ninjas API (Quotes)
 
 ## Challenges and Successes
 * Challenges : Some challenges were pushing commits and merging code and locating a second API after the OMDB API.
@@ -23,23 +23,38 @@ A web application that allows the user to search (and save their search) through
 
 ## Complete Application Screenshot
 
-### Framework
+### Framework with Google Slides
 ![movie framework photo](https://user-images.githubusercontent.com/111591265/200462457-4bf0859b-50bd-4e87-8239-62a0aca7535f.JPG)
 
-### Front Page
-![Capture](https://user-images.githubusercontent.com/111591265/202341537-b56c8a48-20b4-4ec3-b78f-91948ff758d3.JPG)
+### Front Page displaying random movie quotes
+![page 1](https://user-images.githubusercontent.com/112821785/202351565-10ed9e33-f4de-4422-8595-c8b5f2bf44dd.JPG)
+
 
 ### Search Example
-![capture 2](https://user-images.githubusercontent.com/111591265/202341704-0d9963a6-078b-4bea-802b-44b8b7ad4619.JPG)
+
+![page 2](https://user-images.githubusercontent.com/112821785/202351582-0b3971ec-d138-4722-b69a-afec792ee140.JPG)
 
 ### More Info (modals)
-![capture 3](https://user-images.githubusercontent.com/111591265/202341860-2b7615b7-b8e3-4821-b005-1ccbef899b99.JPG)
+
+![page 3](https://user-images.githubusercontent.com/112821785/202351592-d0f9c8d5-8937-46f4-8249-0215a4e5dab5.JPG)
 
 
-##WatchList
-![capture 4](https://user-images.githubusercontent.com/112821785/202348145-01c6f857-985f-4271-97d7-2f8547b39607.JPG)
+### WatchList
+
+*![page 4](https://user-images.githubusercontent.com/112821785/202351621-8f2b5cf1-6d11-4d6f-bb62-b31c7e1294e2.JPG)
+
+![page 5](https://user-images.githubusercontent.com/112821785/202351631-b0039d4c-ed03-4f54-b1a0-b1b558747145.JPG)
 
 
-## Link to Deployed Application
-*
-https://ale-miret.github.io/Media-search/
+Deployed Link: https://ale-miret.github.io/Media-search/
+<br>
+Github Repo Link: https://github.com/Ale-Miret/Media-search
+<br>
+Collaborators: <br>
+Elizabeth Ramos
+<br>
+Christopher Doolhoff
+<br>
+Alejandra Miret
+<br>
+Michael Kohler
