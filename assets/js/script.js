@@ -159,11 +159,11 @@ var movieResults = function (data) {
       "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
       dataMore.Ratings[1].Source +
       ": " +
-      dataMore.Ratings[0].Value +
+      dataMore.Ratings[1].Value +
       "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
       dataMore.Ratings[2].Source +
       ": " +
-      dataMore.Ratings[0].Value +
+      dataMore.Ratings[2].Value +
       "<br>Released: " +
       dataMore.Released +
       "<br><p>Plot: " +
