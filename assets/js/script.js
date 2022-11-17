@@ -26,11 +26,13 @@ $.ajax({
 });
 //
 
+// Declare variables
 var APIKey = "62501089";
 var baseURL = "http://www.omdbapi.com/?apikey=";
 var movieInput = document.querySelector("#movie-input").value;
 var movieBoxEl = document.querySelector(".movie-box");
 
+// API Call for movies containing search words
 var getMovieInfo = function () {
   if (movieInput != 0) {
     var apiUrl = baseURL + APIKey + "&s=" + movieInput;
@@ -59,6 +61,7 @@ var getMovieInfo = function () {
   }
 };
 
+// search button listener event
 $(".is-responsive").click(function () {
   movieInput = document.querySelector("#movie-input").value;
 
@@ -67,6 +70,7 @@ $(".is-responsive").click(function () {
   getMovieInfo();
 });
 
+// allows user to press the enter key for search instead of search button
 $("#movie-input").keypress(function (event) {
   var keycode = event.keyCode ? event.keyCode : event.which;
   if (keycode == "13") {
@@ -77,7 +81,7 @@ $("#movie-input").keypress(function (event) {
     getMovieInfo();
   }
 });
-
+// dynamically add API results to the page
 var movieResults = function (data) {
   console.log(data);
   $(".movie-box").empty();
@@ -108,6 +112,7 @@ var movieResults = function (data) {
   }
 };
 
+// API call for the specific movie that the user wants more info for
 var getMoreInfo = function (movieID) {
   if (movieInput != 0) {
     var apiUrl = baseURL + APIKey + "&plot=full&i=" + movieID;
@@ -130,12 +135,14 @@ var getMoreInfo = function (movieID) {
   }
 };
 
+// dynamically add API results of more info to the modal
 var movieResultsMore = function (dataMore) {
   console.log(dataMore);
   console.log(dataMore.Plot);
   var modalEl = document.querySelector("#modal-card-body");
   var modalBox = document.querySelector("#infoModal");
   var forLoop = "";
+  // for loop for array in Ratings
   for (var i = 0; i < dataMore.Ratings.length; i++) {
     forLoop +=
       "<br>&nbsp;&nbsp;&nbsp;&nbsp;" +
@@ -160,6 +167,7 @@ var movieResultsMore = function (dataMore) {
     "<br>Rated: " +
     dataMore.Rated +
     "<br>Ratings: " +
+    // add forLoop variable to the page
     forLoop +
     "<br>Released: " +
     dataMore.Released +
@@ -168,11 +176,11 @@ var movieResultsMore = function (dataMore) {
     "</P";
   modalBox.classList.add("is-active");
 };
-
+// close modal function from bulma
 function closeModal($el) {
   $el.classList.remove("is-active");
 }
-
+// close modal listener from bulma
 (
   document.querySelectorAll(
     ".modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button"
