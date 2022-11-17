@@ -41,4 +41,5 @@ A web application that allows the user to search (and save their search) through
 
 
 ## Link to Deployed Application
-* -
+*
+https://ale-miret.github.io/Media-search/
