@@ -90,7 +90,11 @@ var getMoreInfo = function (movieID) {
     console.log(dataMore.Plot);
     var modalEl = document.querySelector('#modal-card-body');
     var modalBox = document.querySelector('#infoModal');
-    modalEl.innerHTML = "<h1>" + dataMore.Title + "</h1>" + "<br>Actors: " + dataMore.Actors + "<br>Awards: " + dataMore.Awards + "<br>BoxOffice: " + dataMore.BoxOffice + "<br>Director: " + dataMore.Director + "<br>Genre: " + dataMore.Genre + "<br>Rated: " + dataMore.Rated + "<br>Ratings: " + dataMore.Ratings + "<br>Released: " + dataMore.Released + "<br><p>Plot: " + dataMore.Plot + '</P'
+    modalEl.innerHTML = "<h1>" + dataMore.Title + "</h1>" + "<br>Actors: " + dataMore.Actors + "<br>Awards: " + dataMore.Awards + "<br>BoxOffice: " + dataMore.BoxOffice + "<br>Director: " + dataMore.Director + "<br>Genre: " + dataMore.Genre + "<br>Rated: " + dataMore.Rated + "<br>Ratings: " + 
+    "<br>&nbsp;&nbsp;&nbsp;&nbsp;" + dataMore.Ratings[0].Source + ": " + dataMore.Ratings[0].Value + 
+    "<br>&nbsp;&nbsp;&nbsp;&nbsp;" + dataMore.Ratings[1].Source + ": " + dataMore.Ratings[0].Value + 
+    "<br>&nbsp;&nbsp;&nbsp;&nbsp;" + dataMore.Ratings[2].Source + ": " + dataMore.Ratings[0].Value + 
+    "<br>Released: " + dataMore.Released + "<br><p>Plot: " + dataMore.Plot + '</P'
     modalBox.classList.add('is-active');
 };
 
