@@ -25,3 +25,4 @@ A web application that allows the user to search (and save their search) through
 
 ![movie framework photo](https://user-images.githubusercontent.com/111591265/200462457-4bf0859b-50bd-4e87-8239-62a0aca7535f.JPG)
 
+![Capture](https://user-images.githubusercontent.com/111591265/202341537-b56c8a48-20b4-4ec3-b78f-91948ff758d3.JPG)
