@@ -1,5 +1,11 @@
 # Media Search
 
+
+##User Story
+As a User I want to be able to search for a movie, television series or video game title so that I can get the results
+
+
+
 ## Description
 A web application that allows the user to search (and save their search) through multiple different media titles (movies, tv series and video games) and display information such as:
 * Movie title
