@@ -9,6 +9,7 @@ body {
   color: #44003b;
 }
 
+/* search button styling */
 .is-responsive {
   height: 50px;
   width: 100%;
@@ -35,6 +36,7 @@ ul {
   background-color: #483475;
 }
 
+/* media watch list item styling */
 li {
   height: 50px;
   margin-top: 5px;
@@ -58,6 +60,7 @@ li::after {
   clear: both;
 }
 
+/* seen button styling */
 li button {
   float: right;
   border: none;
@@ -69,11 +72,13 @@ li button {
   border-radius: 12px;
 }
 
+/* hover effect for seen button */
 li button:hover {
     background-color: #483475;
     color: white;
 }
 
+/* main content styling */
 .mainbox {
   display: block;
   background-color:	#483475;
@@ -86,6 +91,7 @@ li button:hover {
   width: 80vw;
 }
 
+/* back home link styling */
 .backhome{
 color: whitesmoke;
 display: flex;
